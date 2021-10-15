@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<!-- A viewport meta tag should make the web site work on all devices and resolutions-->
+<meta name="viewport" content="width=device-width, initial-scale = 1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+<html>
+  <head>
+    <title>Caleb's Website</title>
+  </head>
+  <body style="background-color: silver">
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black">
+      <a href="#home" class="w3-button w3-bar-item">Home</a>
+      <a href="#projects" class="w3-button w3-bar-item">Projects</a>
+      <a href="#resume" class="w3-button w3-bar-item">Resume</a>
+      <!-- <a href="#about" class="w3-button w3-bar-item">About Me</a> -->
+      <!-- <a href="contact.html" class="w3-button w3-bar-item">Contact</a> -->
+    </nav>
+
+    <!-- New Header Code -->
+    <!-- TODO Add animations for header changes. Transparent animations? -->
+    <h1 class="w3-bar w3-dark-grey" style="max-height: 400%">
+      <p>Welcome to my website.</p>
+    </h1>
+
+    <!-- Slide Show -->
+    <section>
+      <img
+        class="mySlides"
+        src="resources/images/bird.jpg"
+        style="width: 25%"
+      />
+      <section class="w3-container w3-center" style="max-width: 600px">
+        <h2 class="w3-wide">About Me</h2>
+        <p class="w3-opacity"><em>A little about myself...</em></p>
+      </section>
+      <section class="w3-container w3-center" style="max-width: 600px">
+        <p class="w3-justify">
+          My name is Caleb and I am coding my website. I was born and raised in
+          Seattle, Washington and enjoy the misty Fall mornings. My hobbies
+          include reading, playing the piano, and exercising. I hope you found
+          this article amazing. Thank you for stopping by.
+        </p>
+      </section>
+    </section>
+
+    <!-- Tab Header Code-->
+    <!-- <div id="Home" class="tabcontent">
+      <h1>Home</h1>
+      <p>This is the content for the home page.</p>
+    </div>
+
+    <div id="Projects" class="tabcontent">
+      <h1>Projects</h1>
+      <p>This is the content for the projects page.</p>
+    </div>
+
+    <div id="About-Me" class="tabcontent">
+      <h1>About Me</h1>
+      <p>This is the content for the "About Me" page.</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h1>Contact</h1>
+      <p>This is the content for the contact page.</p>
+    </div> -->
+
+    <script>
+      // Automatic Slideshow
+      var myIndex = 0;
+      // carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    </script>
+    <!-- Welcome Header with white font text, width = MAX_WINDOW_SIZE -->
+
+    <!-- <section class="w3-container w3-center" style="max-width: 600px">
+      <p class="w3-justify">
+        I have created a website for myself! Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua
+      </p>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-dark-grey w3-xlarge">
+      <section class="w3-row-padding w3-center">
+        <article class="w3-third">
+          <p>Mobile</p>
+          <img
+            src="resources/images/icons/icons8-mobile-30.png"
+            alt="Random Name"
+            style="width: 10%"
+          />
+        </article>
+        <article class="w3-third">
+          <p>Email</p>
+          <img
+            src="resources/images/icons/icons8-email-50.png"
+            alt="Random Name"
+            style="width: 10%"
+          />
+        </article>
+        <article class="w3-third">
+          <p>GitHub</p>
+          <img
+            src="resources/images/icons/icons8-mind-map-24.png"
+            alt="Random Name"
+            style="width: 10%"
+          />
+        </article>
+      </section>
+
+      <p class="w3-medium">
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
