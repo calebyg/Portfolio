@@ -1,5 +1,5 @@
-# calghir-webpage
+# Caleb's Portfolio
 
-[Caleb's Website](http://calghir-com.stackstaging.com/)
+[Home](http://calghir-com.stackstaging.com/)
 
 Hosted by <u>[ecowebhosting](https://www.ecowebhosting.co.uk/)</u>
